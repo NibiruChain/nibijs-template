@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Nibiru | Template App",
   description: "Empty Nibi JS Template App",
+  metadataBase: new URL("https://nibiru.fi/"),
 };
 
 export default function RootLayout({
