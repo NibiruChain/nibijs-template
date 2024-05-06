@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# nibijs template <!-- omit in toc -->
 
-## Getting Started
+<!-- Badge links -->
 
-First, run the development server:
+[discord-badge]: https://img.shields.io/badge/Nibiru%20Chain-%237289DA.svg?style=&logo=discord&logoColor=white
+[discord-url]: https://discord.gg/HFvbn7Wtud
+[social-twitter]: https://twitter.com/NibiruChain
+[social-linkedin]: https://www.linkedin.com/company/nibiruchain
+[social-medium]: https://blog.nibiru.fi/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<p align="center">
+<img src="https://nibiru.fi/assets/logo-main.90a5440d.svg" width="500">
+</p>
+
+<p align="center">
+Nibi JS template build with Next, React, Cosmos-kit & tailwind to superstart your development.
+</p>
+
+[<img align="right" alt="Medium" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/medium.svg" />][social-medium]
+[<img align="right" alt="LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][social-linkedin]
+[<img align="right" alt="Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/twitter.svg" />][social-twitter]
+
+<!--
+Workflow badges aren't available on private repositories.
+[![web-app-nibiru test workflow image][tests-badge]][tests-workflow] -->
+
+[![discord badge image][discord-badge]][discord-url]
+
+#### Table of Contents
+
+- [Usage Instructions](#usage-instructions)
+    - [Install Node Version Manager (`nvm`)](#install-node-version-manager-nvm)
+    - [Run the application locally](#run-the-application-locally)
+- [Dependancies](#dependancies)
+- [Source (src) Directory Structure](#source-src-directory-structure)
+- [Deployments](#deployments)
+- [TSConfig](#tsconfig)
+
+---
+
+## Usage Instructions
+
+#### Install Node Version Manager (`nvm`)
+
+To install or update nvm, run the install script using the following command:
+
+```sh
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+For more information, see [github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Run the application locally
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Move to the repo's node version as defined by the .nvmrc:
 
-## Learn More
+   ```sh
+   nvm use
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install yarn and download package dependencies (can take ≈3 minutes):
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```sh
+   npm install -g yarn
+   yarn # or: npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Run the application with:
 
-## Deploy on Vercel
+   ```sh
+    npm run dev   # defaults to http://localhost:3000
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    # or
+    bun dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    This will automatically open an interactive development environment with hot
+    reloading, enabling you to edit files and see changes reflected in the
+    running application.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+    You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+---
+
+## Dependancies
+
+- [Nibi JS](https://github.com/NibiruChain/ts-sdk)
+- [Next js](https://nextjs.org/)
+- [React js](https://react.dev/)
+- [Tailwind](https://tailwindcss.com/)
+- [Cosmos-Kit](https://cosmology.zone/products/cosmos-kit)
+
+---
+
+## Source (src) Directory Structure
+
+- `components`: Contains all reusable components.
+- `pages`: A directory containing the page-level components. Each subdirectory of `pages` corresponds to a page in the application.
+- `layouts`: For layout-based components like sidebars, navbars, containers, page headers, and page footers.
+- `hooks`: For custom hooks.
+- `context`: Contains logic related to the global Redux store.
+- `config`: For custom types re-used in multiple places. A subdirectory or file named "types" exports local to a specific directory.
+- `style`: For utility functions that didn't fit into other categories.
+
+---
+
+## Deployments
+
+After building, you can upload `dist` folder to a hosting service like Netlify
+
+```sh
+yarn build
+```
+
+Reference: <https://create-react-app.dev/docs/deployment/>
+
+---
+
+## TSConfig
+
+Visit <https://aka.ms/tsconfig> to read more about this file
+
+---
+
+© Nibi, Inc.
+
+<p align="center">
+<img src="https://nibiru.fi/assets/logo-main.90a5440d.svg" width="300">
+</p>
