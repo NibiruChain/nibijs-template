@@ -10,6 +10,7 @@ import { wallets as leapWallets } from "@cosmos-kit/leap";
 import Layout from "../layouts";
 import { Metadata } from "next";
 import { AssetsList, ChainSchema } from "../config";
+import { NibiruClientProvider } from "../context";
 
 export const metadata: Metadata = {
   title: "Nibiru | Template App",
@@ -44,9 +45,11 @@ function App({ Component, pageProps }: AppProps) {
       // @ts-ignore
       signerOptions={signerOptions}
     >
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <NibiruClientProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </NibiruClientProvider>
     </ChainProvider>
   );
 }
