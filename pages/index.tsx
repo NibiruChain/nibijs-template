@@ -18,7 +18,7 @@ export default function Home() {
           >
             By{" "}
             <Image
-              src="https://nibiru.fi/assets/logo-dark.b0f98483.svg"
+              src="https://nibiru.fi/_astro/logo-dark.C4rn8-cZ.svg"
               alt="Nibiru Logo"
               width={100}
               height={24}

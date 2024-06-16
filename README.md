@@ -1,4 +1,4 @@
-# nibijs template <!-- omit in toc -->
+# NibiJS Template <!-- omit in toc -->
 
 <!-- Badge links -->
 
@@ -9,7 +9,7 @@
 [social-medium]: https://blog.nibiru.fi/
 
 <p align="center">
-<img src="https://nibiru.fi/assets/logo-main.90a5440d.svg" width="500">
+<img src="https://nibiru.fi/_astro/logo-main.CXKwOZS3.svg" width="500">
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@ Workflow badges aren't available on private repositories.
 - [Usage Instructions](#usage-instructions)
     - [Install Node Version Manager (`nvm`)](#install-node-version-manager-nvm)
     - [Run the application locally](#run-the-application-locally)
-- [Dependancies](#dependancies)
+- [Dependencies](#dependencies)
 - [Source (src) Directory Structure](#source-src-directory-structure)
 - [Deployments](#deployments)
 - [TSConfig](#tsconfig)
@@ -87,7 +87,7 @@ For more information, see [github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
 
 ---
 
-## Dependancies
+## Dependencies
 
 - [Nibi JS](https://github.com/NibiruChain/ts-sdk)
 - [Next js](https://nextjs.org/)
@@ -130,5 +130,5 @@ Visit <https://aka.ms/tsconfig> to read more about this file
 © Nibi, Inc.
 
 <p align="center">
-<img src="https://nibiru.fi/assets/logo-main.90a5440d.svg" width="300">
+<img src="https://nibiru.fi/_astro/nibi-logomark-main.BQ230I_H.svg" width="300">
 </p>
